@@ -7,9 +7,12 @@ body {
 
 /*Mobile*/
 #container {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: 10vh 58vh 22vh 10vh;
+  display: -ms-grid;
+  -ms-grid-template-columns: auto;
+  -ms-grid-template-rows: 10vh 58vh 22vh 10vh;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 10vh 58vh 22vh 10vh;
   
   grid-template-areas:
     "header"
@@ -51,9 +54,12 @@ li {
 /*Desktop*/
 @media (min-width: 1024px){
     #container {
-      display: grid;
-      grid-template-columns: auto;
-      grid-template-rows: 10vh 22vh 58vh 10vh;
+      display: -ms-grid;
+      -ms-grid-template-columns: auto;
+      -ms-grid-template-rows: 10vh 22vh 58vh 10vh;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 10vh 22vh 58vh 10vh;
   
       grid-template-areas:
         "header"
